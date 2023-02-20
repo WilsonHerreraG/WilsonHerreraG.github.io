@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/java.png">
+    <script src="/index.js"></script>
+   <link rel="stylesheet" href="/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <div class="box" >
+        <div class="form" id="form1">
+            <h2>Elija una opcion</h2> <br/><br/>
+                <div class="inputBox">
+                    <a href="#opcion1" onclick="ocultar()" >1. Menor y mayor de 3 numeros</a> 
+                    <br/><br/>
+                </div>
+                <div class="inputBox">
+                    <a href="#opcion2" onclick="ocultar2()">2. Comprobar si es numero primo o no.</a> 
+                    <br/><br/>
+                </div>
+                <div class="inputBox">
+                    <a href="#opcion3" onclick="ocultar3()">3. Calcular el indice de masa corporal (IMC).</a> 
+                    <br/><br/> 
+                </div>
+                <div class="inputBox"> 
+                    <a href="#opcion4" onclick="ocultar4()">4. Traducir de español a ingles unas ciertas palabras.</a> 
+                    <br/><br/>
+                </div>
+                <div class="inputBox">  
+                    <a href="#opcion5" onclick="ocultar5()">5. Calcular tipo de triangulos</a> 
+                </div>
+        </div>
+        <div class="form" id="opcion1"> 
+            <h2>El menor y mayor de 3 numeros</h2><br/>
+            <div class="inputBox">
+                Ingrese 3 numeros, para verificar cual es mayor y menor de todos ellos.<br/>
+                1.-<input type="number" id="num1"><br/>
+                2.-<input type="number" id="num2"><br/>
+                3.-<input type="number" id="num3"><br/>
+                <button onclick="menor()">Verificar</button><br/><br/>
+                <p id="num"></p><br/>
+                <p id="nume"></p><br/>
+            <a href="#fomr1" onclick="mostrar()">Volver</a>
+            </div>
+        </div>
+
+        <div class="form" id="opcion2"> 
+            <h2>Numeros primos</h2><br/><br/>
+            <div class="inputBox">
+                Ingrese un numero entero, para comprobar si es primo o no.<br/><br/>
+                <input type="number" id="primo">
+                <button onclick="primo()">Comprobar</button><br/><br/>
+                <p id="tex_primo"></p><br/><br/>
+                <a href="#fomr1" onclick="mostrar2()">Volver</a>
+            </div>
+        </div>
+        <div class="form" id="opcion3"> 
+            <h2>Calculadora de Indice de Masa Corporal</h2><br/><br/>
+            <div class="inputBox">
+                Ingrese su peso en kilogramos y su altura en metros.
+            <input type="number" id="kg">Kilogramos.
+            <input type="number" id="mt">metros.
+            <button onclick="imc()">Calcular</button><br/><br/>
+            <p id="indice"></p><br/><br/>
+            <a href="#fomr1" onclick="mostrar3()">Volver</a>
+            </div>
+        </div>
+        <div class="form" id="opcion4"> 
+            <h2>Español --> Ingles</h2><br/><br/>
+            <div class="inputBox">
+                Por favor ingrese cualquier palabra que se muestre a continuacion:
+                (Casa, mesa, perro, gato).<br/><br/>
+                <input type="text" id="text_traducir">
+                <button onclick="traducir()">Traducir</button><br/><br/>
+               <p id="mensaje"></p><br/><br/>
+                <a href="#fomr1" onclick="mostrar4()">Volver</a>
+            </div>
+        </div>
+        <div class="form" id="opcion5"> 
+            <h2>Tipos de triangulo</h2><br/>
+            <div class="inputBox">
+                Ingrese lados de 4 triangulos diferentes.
+                <div id="triangulo1">
+                    Triangulo 1: <br/><br/>
+                    Lado 1 <input type="number" id="a1"><br/>
+                    Lado 2 <input type="number" id="b1"><br/>
+                    Lado 3 <input type="number" id="c1"><br/><br/>
+                    <a href="#" onclick="tri1()">Siguiente</a><br/><br/>
+                </div>
+                <div id="triangulo2">
+                    Triangulo 2: <br/><br/>
+                    Lado 1 <input type="number" id="a2"><br/>
+                    Lado 2 <input type="number" id="b2"><br/>
+                    Lado 3 <input type="number" id="c2"><br/><br/>
+                    <a href="#" onclick="tri2()">Siguiente</a><br/><br/>
+                </div>
+                <div id="triangulo3">
+                    Triangulo 3: <br/><br/>
+                    Lado 1 <input type="number" id="a3"><br/>
+                    Lado 2 <input type="number" id="b3"><br/>
+                    Lado 3 <input type="number" id="c3"><br/><br/>
+                    <a href="#" onclick="tri3()">Siguiente</a><br/><br/>
+                </div>
+                <div id="triangulo4">
+                    Triangulo 4: <br/><br/>
+                    Lado 1 <input type="number" id="a4"><br/>
+                    Lado 2 <input type="number" id="b4"><br/>
+                    Lado 3 <input type="number" id="c4"><br/><br/>
+                    <a href="#" onclick="triCal()">Calcular</a><br/><br/>
+                    
+                </div>
+                <div id="resultados">
+                    <ol>
+                   <li><p id="t1"></p> </li>
+                   <li><p id="t2"></p> </li>
+                   <li><p id="t3"></p> </li>
+                   <li><p id="t4"></p> </li>
+                   <li><p id="equi"></p></li>
+                   <li><p id="iso"></p></li>
+                   <li><p id="esca"></p></li>
+                   <li><p id="trimen"></p></li> <br/>
+                </ol>
+                </div>
+            <a href="#fomr1" onclick="mostrar5()">Volver</a>
+            </div>
+        </div>
+        
+    </div>    
+</body>
+</html>
